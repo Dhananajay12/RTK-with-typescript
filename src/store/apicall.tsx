@@ -11,6 +11,7 @@ export const zonesApi = createApi({
 			query: () => `/connect/filters`,
 			providesTags:['Zones']
 		}),
+		
 		postZones: builder.mutation<Zones, Zones>({
 			query: (post) => ({
 				url: '/connect/createFilter',
